@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply min-h-dvh font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-sunset-500/35 text-white;
+  }
+}
